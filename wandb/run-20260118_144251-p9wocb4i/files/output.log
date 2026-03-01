@@ -1,0 +1,30 @@
+🚀 Loading model: microsoft/Phi-3-mini-4k-instruct
+`torch_dtype` is deprecated! Use `dtype` instead!
+`flash-attention` package not found, consider installing for better performance: No module named 'flash_attn'.
+Current `flash-attention` does not support `window_size`. Either upgrade or use `attn_implementation='eager'`.
+Fetching 2 files:   0%|              | 0/2 [00:00<?, ?it/s]Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+model-00002-of-00002.safetensors: 100%|█| 2.67G/2.67G [08:2
+C:\Gpp-Tasks\financial-sentiment-llm-lora\financial-sentiment-lora-venv\Lib\site-packages\huggingface_hub\file_download.py:143: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\vicky\.cache\huggingface\hub\models--microsoft--Phi-3-mini-4k-instruct. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+Fetching 2 files: 100%|█████| 2/2 [08:29<00:00, 254.81s/it]
+Traceback (most recent call last):
+  File "C:\Gpp-Tasks\financial-sentiment-llm-lora\src\train.py", line 117, in <module>
+    train()
+  File "C:\Gpp-Tasks\financial-sentiment-llm-lora\src\train.py", line 43, in train
+    model = AutoModelForCausalLM.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Gpp-Tasks\financial-sentiment-llm-lora\financial-sentiment-lora-venv\Lib\site-packages\transformers\models\auto\auto_factory.py", line 597, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Gpp-Tasks\financial-sentiment-llm-lora\financial-sentiment-lora-venv\Lib\site-packages\transformers\modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Gpp-Tasks\financial-sentiment-llm-lora\financial-sentiment-lora-venv\Lib\site-packages\transformers\modeling_utils.py", line 5029, in from_pretrained
+    device_map = _get_device_map(model, device_map, max_memory, hf_quantizer, dtype, keep_in_fp32_regex)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Gpp-Tasks\financial-sentiment-llm-lora\financial-sentiment-lora-venv\Lib\site-packages\transformers\modeling_utils.py", line 1365, in _get_device_map
+    hf_quantizer.validate_environment(device_map=device_map)
+  File "C:\Gpp-Tasks\financial-sentiment-llm-lora\financial-sentiment-lora-venv\Lib\site-packages\transformers\quantizers\quantizer_bnb_4bit.py", line 127, in validate_environment
+    raise ValueError(
+ValueError: Some modules are dispatched on the CPU or the disk. Make sure you have enough GPU RAM to fit the quantized model. If you want to dispatch the model on the CPU or the disk while keeping these modules in 32-bit, you need to set `llm_int8_enable_fp32_cpu_offload=True` and pass a custom `device_map` to `from_pretrained`. Check https://huggingface.co/docs/transformers/main/en/main_classes/quantization#offload-between-cpu-and-gpu for more details.

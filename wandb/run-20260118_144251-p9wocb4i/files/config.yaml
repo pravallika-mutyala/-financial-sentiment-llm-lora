@@ -1,0 +1,93 @@
+_wandb:
+    value:
+        cli_version: 0.24.0
+        e:
+            9a78tosoncxg7e3i8v7rggfmxa6ulf7n:
+                codePath: src\train.py
+                codePathLocal: src\train.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "493084471296"
+                        used: "464905187328"
+                email: nandimandalamvikram6@gmail.com
+                executable: C:\Gpp-Tasks\financial-sentiment-llm-lora\financial-sentiment-lora-venv\Scripts\python.exe
+                git:
+                    commit: 2397d69f91e73368b039e2090d2530034546ceae
+                    remote: https://github.com/vikram0678/financial-sentiment-llm-lora.git
+                host: vikram
+                memory:
+                    total: "8311836672"
+                os: Windows-11-10.0.26200-SP0
+                program: C:\Gpp-Tasks\financial-sentiment-llm-lora\src\train.py
+                python: CPython 3.12.7
+                root: C:\Gpp-Tasks\financial-sentiment-llm-lora
+                startedAt: "2026-01-18T09:12:51.756162Z"
+                writerId: 9a78tosoncxg7e3i8v7rggfmxa6ulf7n
+        m: []
+        python_version: 3.12.7
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+                - 71
+                - 84
+                - 98
+            "2":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+                - 71
+                - 84
+                - 98
+            "3":
+                - 13
+                - 16
+            "4": 3.12.7
+            "5": 0.24.0
+            "6": 4.57.6
+            "8":
+                - 2
+                - 3
+            "12": 0.24.0
+            "13": windows-amd64
+batch_size:
+    value: 4
+gradient_accumulation_steps:
+    value: 4
+learning_rate:
+    value: 0.0002
+logging_steps:
+    value: 10
+lora_alpha:
+    value: 32
+lora_dropout:
+    value: 0.05
+lora_r:
+    value: 16
+max_seq_length:
+    value: 512
+model_id:
+    value: microsoft/Phi-3-mini-4k-instruct
+num_epochs:
+    value: 1
+output_dir:
+    value: ./outputs
+save_steps:
+    value: 50
+target_modules:
+    value:
+        - qkv_proj
+        - o_proj
+        - gate_up_proj
+        - down_proj

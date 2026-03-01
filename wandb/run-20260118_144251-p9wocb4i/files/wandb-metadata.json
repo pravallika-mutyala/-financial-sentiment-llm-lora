@@ -1,0 +1,28 @@
+{
+  "os":  "Windows-11-10.0.26200-SP0",
+  "python":  "CPython 3.12.7",
+  "startedAt":  "2026-01-18T09:12:51.756162Z",
+  "program":  "C:\\Gpp-Tasks\\financial-sentiment-llm-lora\\src\\train.py",
+  "codePath":  "src\\train.py",
+  "codePathLocal":  "src\\train.py",
+  "git":  {
+    "remote":  "https://github.com/vikram0678/financial-sentiment-llm-lora.git",
+    "commit":  "2397d69f91e73368b039e2090d2530034546ceae"
+  },
+  "email":  "nandimandalamvikram6@gmail.com",
+  "root":  "C:\\Gpp-Tasks\\financial-sentiment-llm-lora",
+  "host":  "vikram",
+  "executable":  "C:\\Gpp-Tasks\\financial-sentiment-llm-lora\\financial-sentiment-lora-venv\\Scripts\\python.exe",
+  "cpu_count":  4,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "493084471296",
+      "used":  "464905187328"
+    }
+  },
+  "memory":  {
+    "total":  "8311836672"
+  },
+  "writerId":  "9a78tosoncxg7e3i8v7rggfmxa6ulf7n"
+}
